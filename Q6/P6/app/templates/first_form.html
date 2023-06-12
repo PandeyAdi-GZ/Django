@@ -1,0 +1,7 @@
+<form method="post",action="">
+    <h3 style="color:darkred;">Please fill your details to start your search</h3>
+    <h3>Fill your Library member ID and personal details (and select check box if from staff)</h3>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="Submit">Submit</button>
+</form>
